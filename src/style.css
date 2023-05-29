@@ -1,0 +1,10 @@
+#app {
+    overflow: hidden;
+}
+.active {
+    color: #d97706
+}
+
+.exact-active-link {
+    color: #d97706 !important;
+}
