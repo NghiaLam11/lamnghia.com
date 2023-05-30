@@ -8,7 +8,7 @@ const onDisplayNav = () => {
     navbar.value.style.top = "-500%";
   }
 };
-var countToggleDarkMode = ref(0);
+var countToggleDarkMode = ref(1);
 const checked = ref(false);
 const ball = ref<any>()
 let localTheme = localStorage.getItem("theme");
@@ -52,21 +52,14 @@ const darkMode = () => {
   }
   countToggleDarkMode.value += 1;
 };
-// const lightMode = () => {
-//   // Whenever the user explicitly chooses dark mode
 
-//   localStorage.theme = "light";
-//   isDark.value = false;
-//   document.getElementById("main")?.classList.add("light");
-//   document.getElementById("main")?.classList.remove("dark");
-// };
 </script>
 
 <template>
   <header>
     <nav class="bg-white border-gray-200 dark:bg-gray-900 font-primary">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative"
+        class="max-w-screen-xl bg-white dark:bg-gray-900 flex flex-wrap items-center justify-between mx-auto p-4 relative z-50"
       >
         <a
           href="#"
@@ -78,7 +71,7 @@ const darkMode = () => {
             alt="JClahi Logo"
           />
           <span
-            class="self-center italic text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 whitespace-nowrap dark:text-white"
+            class="self-center italic text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 whitespace-nowrap"
             >JCLahi</span
           >
         </a>

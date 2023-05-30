@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gsap": "^3.11.5",
+    "tiny-typewriter": "^1.0.4",
     "vue": "^3.2.47",
     "vue-router": "^4.2.1"
   },
