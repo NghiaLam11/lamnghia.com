@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^9.22.1",
     "gsap": "^3.11.5",
     "tiny-typewriter": "^1.0.4",
     "vue": "^3.2.47",

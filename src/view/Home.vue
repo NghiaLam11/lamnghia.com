@@ -77,6 +77,25 @@ onMounted(() => {
     opacity: 1,
   });
 
+  gsap.from("#slideBottom", {
+    scrollTrigger: {
+      trigger: "#slideBottom",
+    },
+    y: 100,
+    scale: 0.8,
+    opacity: 0,
+  });
+
+  gsap.to("#slideBottom", {
+    scrollTrigger: {
+      trigger: "#slideBottom",
+    },
+    duration: 0.7,
+    y: 0,
+    scale: 1,
+    opacity: 1,
+  });
+
   gsap.to("#imgSpin", {
     scrollTrigger: {
       scrub: 1,
@@ -100,8 +119,7 @@ onMounted(() => {
 </script>
 
 <template>
-
-<!-- ------------------------------- START BANNER ------------- -->
+  <!-- ------------------------------- START BANNER ------------- -->
   <div
     class="relative w-full lg:py-0 lg:h-screen h-full md:py-44 py-36 flex justify-center items-center bg-amber-200 dark:bg-slate-700 font-primary"
   >
@@ -143,8 +161,8 @@ onMounted(() => {
       alt=""
     />
   </div>
-<!-- ------------------------------- END BANNER ------------- -->
-<!-- ------------------------------- START INTRO ------------- -->
+  <!-- ------------------------------- END BANNER ------------- -->
+  <!-- ------------------------------- START INTRO ------------- -->
 
   <div
     class="relative dark:text-white dark:bg-gray-800 bg-white md:py-44 py-24 font-primary"
@@ -183,30 +201,214 @@ onMounted(() => {
       </div>
     </div>
   </div>
-<!-- ------------------------------- END INTRO ------------- -->
+  <!-- ------------------------------- END INTRO ------------- -->
 
-<!-- ----------------------------- START PROJECTS -->
-<!-- <div>
-  <div>
-    <h2></h2>
+<div>
+  <div class="h-2 bg-gradient-to-r from-violet-500 via-pink-500 to-fuchsia-500"></div>
+</div>
+
+  <!-- ----------------------------- START PROJECTS -->
+  <div class="font-primary dark:bg-gray-700 md:py-36 py-24">
+    <div class="max-w-screen-xl mx-auto">
+      <h2
+        id="text-project"
+        class="text-center md:text-6xl text-5xl py-5 font-semibold dark:text-slate-200 text-slate-700"
+      >
+        Personal Projects
+      </h2>
+      <div
+        class="flex md:flex-wrap flex-nowrap overflow-scroll md:justify-center mt-10"
+      >
+        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
+                src="../img/14.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  My Responsive Website
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show the page
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
+                src="../img/10.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  My Responsive Website
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show the page
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
+                src="../img/14.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  My Responsive Website
+                </h5>
+              </a>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+              >
+                This page is a static website. Using HTML, CSS and Media Query
+                for responsive website.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show the page
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div> -->
-<!-- ----------------------------- END PROJECTS -->
-
+  <!-- ----------------------------- END PROJECTS -->
 </template>
 
 <style scoped>
-
-
 #text {
   filter: drop-shadow(5px 4px #cf2c7e);
 }
+
+
 
 #text-intro {
   filter: drop-shadow(4px 3px #a7a77c);
 }
 
+#text-project {
+  animation: text-ani-project 4s linear infinite;
+  transition: animation 2s linear;
+}
 
+@keyframes text-ani-project {
+
+  from {
+    filter: drop-shadow(1px 1px #a7a77c);
+  }
+
+  to {
+    filter: drop-shadow(4px 3px #a7a77c);
+  }
+}
 /* ------------------ ANIMATE LIBRARY ---------------- */
 /* Bouncing entrances  */
 @-webkit-keyframes bounceIn {

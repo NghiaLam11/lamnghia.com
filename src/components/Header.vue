@@ -8,7 +8,7 @@ const onDisplayNav = () => {
     navbar.value.style.top = "-500%";
   }
 };
-var countToggleDarkMode = ref(1);
+var countToggleDarkMode = ref(0);
 const checked = ref(false);
 const ball = ref<any>()
 let localTheme = localStorage.getItem("theme");
@@ -24,8 +24,11 @@ const checkMode = () => {
     document.getElementById("main")?.classList.add("dark");
   } else if (localTheme === "light") {
     document.getElementById("main")?.classList.add("light");
+    onMounted(() => {
+      ball.value.style.left = '5px'
+    })
   } else {
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", "dark");
   }
   console.log('000')
 };
@@ -66,7 +69,7 @@ const darkMode = () => {
           class="flex items-center animate__animated animate__lightSpeedInLeft"
         >
           <img
-            src="/lamhiennghia (1).png"
+            src="/logo.png"
             class="h-11 mr-3 rounded-full"
             alt="JClahi Logo"
           />
@@ -120,7 +123,7 @@ const darkMode = () => {
                 active-class="active-link"
                 exact-active-class="exact-active-link"
                 to="/about"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >About</router-link
               >
             </li>
@@ -129,7 +132,7 @@ const darkMode = () => {
                 active-class="active-link"
                 exact-active-class="exact-active-link"
                 to="/about"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >News Feed</router-link
               >
             </li>
@@ -138,7 +141,7 @@ const darkMode = () => {
                 active-class="active-link"
                 exact-active-class="exact-active-link"
                 to="/about"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Libraries</router-link
               >
             </li>
@@ -147,7 +150,7 @@ const darkMode = () => {
                 active-class="active-link"
                 exact-active-class="exact-active-link"
                 to="/about"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Résume</router-link
               >
             </li>
@@ -242,7 +245,6 @@ label span {
   background: #fffefe;
   border-radius: 50%;
   top: calc(50% - (16px / 2));
-  left: 3px;
   transition: 0.8s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
