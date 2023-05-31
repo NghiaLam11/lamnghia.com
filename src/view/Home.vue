@@ -77,18 +77,18 @@ onMounted(() => {
     opacity: 1,
   });
 
-  gsap.from("#slideBottom", {
+  gsap.from(".slideBottom", {
     scrollTrigger: {
-      trigger: "#slideBottom",
+      trigger: ".slideBottom",
     },
     y: 100,
-    scale: 0.8,
+    scale: 0.9,
     opacity: 0,
   });
 
-  gsap.to("#slideBottom", {
+  gsap.to(".slideBottom", {
     scrollTrigger: {
-      trigger: "#slideBottom",
+      trigger: ".slideBottom",
     },
     duration: 0.7,
     y: 0,
@@ -202,10 +202,13 @@ onMounted(() => {
     </div>
   </div>
   <!-- ------------------------------- END INTRO ------------- -->
-
-<div>
-  <div class="h-2 bg-gradient-to-r from-violet-500 via-pink-500 to-fuchsia-500"></div>
-</div>
+  <!-- ---------------- START BREAK ------------------ -->
+  <div>
+    <div
+      class="h-2 bg-gradient-to-r from-violet-500 via-pink-500 to-fuchsia-500"
+    ></div>
+  </div>
+  <!-- ---------------- END BREAK ------------------ -->
 
   <!-- ----------------------------- START PROJECTS -->
   <div class="font-primary dark:bg-gray-700 md:py-36 py-24">
@@ -219,41 +222,57 @@ onMounted(() => {
       <div
         class="flex md:flex-wrap flex-nowrap overflow-scroll md:justify-center mt-10"
       >
-        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
           <div
             class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
           >
-            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+            <a
+              target="_blank"
+              href="https://github.com/NghiaLam11/LandingPage"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
               <img
-                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
                 src="../img/14.jpg"
                 alt=""
             /></a>
             <div class="p-5 sm:w-1/2 md:w-full w-full">
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://github.com/NghiaLam11/LandingPage"
+              >
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
                 >
                   My Responsive Website
                 </h5>
               </a>
+              <p
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
+              >
+                Technologies: HTML5, CSS3
+              </p>
               <p
                 class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
               >
                 This page is a static website. Using HTML, CSS and Media Query
                 for responsive website.
               </p>
+
               <p
-                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
               >
-                This page is a static website. Using HTML, CSS and Media Query
-                for responsive website.
+                <span class="multiline-ellipsis">
+                  This page is a static website. Using HTML, CSS and Media Query
+                  for responsive website.
+                </span>
               </p>
               <a
-                href="#"
+                target="_blank"
+                href="https://github.com/NghiaLam11/LandingPage"
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Show the page
+                Show resources
                 <svg
                   aria-hidden="true"
                   class="w-4 h-4 ml-2 -mr-1"
@@ -272,41 +291,56 @@ onMounted(() => {
           </div>
         </div>
 
-        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
           <div
             class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
           >
-            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+            <a
+              target="_blank"
+              href="https://weather-app-34242.web.app/"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
               <img
-                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
-                src="../img/10.jpg"
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
+                src="../img/w1.jpg"
                 alt=""
             /></a>
             <div class="p-5 sm:w-1/2 md:w-full w-full">
-              <a href="#">
+              <a target="_blank" href="https://weather-app-34242.web.app/">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
                 >
-                  My Responsive Website
+                  The Weather App (Open Weather API)
                 </h5>
               </a>
               <p
-                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
               >
-                This page is a static website. Using HTML, CSS and Media Query
-                for responsive website.
+                Technologies: VueJs, HTML5, CSS3, Javascript
               </p>
               <p
-                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
               >
-                This page is a static website. Using HTML, CSS and Media Query
-                for responsive website.
+                If you want to check the weather at a location, use this page.(
+                I using VueJs framework, HTML, CSS, Javascript to making this
+                website. )
+              </p>
+
+              <p
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
+              >
+                <span class="multiline-ellipsis">
+                  If you want to check the weather at a location, use this
+                  page.( I using VueJs framework, HTML, CSS, Javascript to
+                  making this website. )
+                </span>
               </p>
               <a
-                href="#"
+                target="_blank"
+                href="https://weather-app-34242.web.app/"
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Show the page
+                Show resources
                 <svg
                   aria-hidden="true"
                   class="w-4 h-4 ml-2 -mr-1"
@@ -325,41 +359,259 @@ onMounted(() => {
           </div>
         </div>
 
-        <div id="slideBottom" class="lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
           <div
             class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
           >
-            <a href="#" class="md:w-full sm:w-1/2 w-full h-full">
+            <a
+              target="_blank"
+              href="https://flash-cards-9eccd.web.app"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
               <img
-                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200"
-                src="../img/14.jpg"
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
+                src="../img/f2.jpg"
                 alt=""
             /></a>
             <div class="p-5 sm:w-1/2 md:w-full w-full">
-              <a href="#">
+              <a target="_blank" href="https://flash-cards-9eccd.web.app">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
                 >
-                  My Responsive Website
+                  Flash Cards
                 </h5>
               </a>
               <p
-                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
               >
-                This page is a static website. Using HTML, CSS and Media Query
-                for responsive website.
+                Technologies: VueJs, Typescript, HTML5, CSS3, Javascript,
               </p>
               <p
-                class="mb-3 font-normal text-gray-700 dark:text-gray-400 md:block hidden"
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
               >
-                This page is a static website. Using HTML, CSS and Media Query
-                for responsive website.
+                Include some features to learn a language: adding, removing,
+                editing, searching, and blending cards.
+              </p>
+
+              <p
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
+              >
+                <span class="multiline-ellipsis">
+                  Include some features to learn a language: adding, removing,
+                  editing, searching, and blending cards.
+                </span>
               </p>
               <a
-                href="#"
+                target="_blank"
+                href="https://flash-cards-9eccd.web.app"
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Show the page
+                Show resources
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a
+              target="_blank"
+              href="https://flip-card-906d6.web.app/"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
+                src="../img/f3.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a target="_blank" href="https://flip-card-906d6.web.app/">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
+                >
+                  The Flip Fruits Game
+                </h5>
+              </a>
+              <p
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
+              >
+                Technologies: ReactJs, HTML5, CSS3, Javascript,
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                You need to flip cards to have two of the same cards until all
+                of the cards have been flipped.
+              </p>
+
+              <p
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
+              >
+                <span class="multiline-ellipsis">
+                  You need to flip cards to have two of the same cards until all
+                  of the cards have been flipped.
+                </span>
+              </p>
+              <a
+                target="_blank"
+                href="https://flip-card-906d6.web.app/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show resources
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a
+              target="_blank"
+              href="https://github.com/NghiaLam11/facebook-clone"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
+                src="../img/f1.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a
+                target="_blank"
+                href="https://github.com/NghiaLam11/facebook-clone"
+              >
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
+                >
+                  Facebook Clone
+                </h5>
+              </a>
+              <p
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
+              >
+                Technologies: VueJs, NuxtJs, HTML5, CSS3, Javascript.
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                That awesome! It has a lot of features like adding, deleting,
+                commenting, and reacting emotionally to statuses. You can upload
+                short stories and delete them after 24 hours.
+              </p>
+
+              <p
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
+              >
+                <span class="multiline-ellipsis">
+                  That awesome! It has a lot of features like adding, deleting,
+                  commenting, and reacting emotionally to statuses. You can
+                  upload short stories and delete them after 24 hours.
+                </span>
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/NghiaLam11/facebook-clone"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show resources
+                <svg
+                  aria-hidden="true"
+                  class="w-4 h-4 ml-2 -mr-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideBottom lg:w-1/4 md:w-4/12 sm:w-3/4 w-11/12 p-3">
+          <div
+            class="overflow-hidden h-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex md:flex-col flex-col sm:flex-row"
+          >
+            <a
+              target="_blank"
+              href="https://lhnn-20b99.web.app/"
+              class="md:w-full sm:w-1/2 w-full lg:h-1/2 h-1/2 sm:h-full overflow-hidden"
+            >
+              <img
+                class="rounded-t-lg hover:scale-110 h-full transition linear duration-200 w-full"
+                src="../img/f2.jpg"
+                alt=""
+            /></a>
+            <div class="p-5 sm:w-1/2 md:w-full w-full">
+              <a target="_blank" href="https://lhnn-20b99.web.app/">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600 hover:to-pink-600 hover:from-purple-600 truncate"
+                >
+                  My lhnn Page
+                </h5>
+              </a>
+              <p
+                class="mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 hover:to-orange-400 hover:from-yellow-400 truncate font-semibold"
+              >
+                Technologies: ReactJs, HTML5, CSS3, Javascript,
+              </p>
+              <p
+                class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate block md:hidden"
+              >
+                I'm so happy to make this page for myself. Include my
+                introduction, my timeline, and my resume in dark mode and light
+                mode, and upload photos on my timeline.
+              </p>
+
+              <p
+                class="mb-3 font-normal md:block hidden text-gray-700 dark:text-gray-300"
+              >
+                <span class="multiline-ellipsis">
+                  I'm so happy to make this page for myself. Include my
+                  introduction, my timeline, and my resume in dark mode and
+                  light mode, and upload photos on my timeline.
+                </span>
+              </p>
+              <a
+                target="_blank"
+                href="https://lhnn-20b99.web.app/"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Show resources
                 <svg
                   aria-hidden="true"
                   class="w-4 h-4 ml-2 -mr-1"
@@ -384,11 +636,16 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 #text {
   filter: drop-shadow(5px 4px #cf2c7e);
 }
-
-
 
 #text-intro {
   filter: drop-shadow(4px 3px #a7a77c);
@@ -400,7 +657,6 @@ onMounted(() => {
 }
 
 @keyframes text-ani-project {
-
   from {
     filter: drop-shadow(1px 1px #a7a77c);
   }
