@@ -163,7 +163,6 @@ onMounted(() => {
   </div>
   <!-- ------------------------------- END BANNER ------------- -->
   <!-- ------------------------------- START INTRO ------------- -->
-
   <div
     class="relative dark:text-white dark:bg-gray-800 bg-white md:py-44 py-24 font-primary"
   >
@@ -633,6 +632,14 @@ onMounted(() => {
     </div>
   </div>
   <!-- ----------------------------- END PROJECTS -->
+  <!-- ---------------- START BREAK ------------------ -->
+  <div>
+    <div
+      class="h-2 bg-gradient-to-r from-violet-500 via-pink-500 to-fuchsia-500"
+    ></div>
+  </div>
+  <!-- ---------------- END BREAK ------------------ -->
+
 </template>
 
 <style scoped>

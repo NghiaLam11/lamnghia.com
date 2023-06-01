@@ -113,7 +113,7 @@ const darkMode = () => {
                 active-class="active-link"
                 exact-active-class="exact-active-link"
                 to="/"
-                class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white md:dark:text-blue-500"
+                class="block py-2 pl-3 pr-4 text-dark rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white"
                 aria-current="page"
                 >Home</router-link
               >
@@ -131,16 +131,16 @@ const darkMode = () => {
               <router-link
                 active-class="active-link"
                 exact-active-class="exact-active-link"
-                to="/about"
+                to="/blogs"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >News Feed</router-link
+                >Blogs</router-link
               >
             </li>
             <li>
               <router-link
                 active-class="active-link"
                 exact-active-class="exact-active-link"
-                to="/about"
+                to=""
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Libraries</router-link
               >
@@ -149,7 +149,7 @@ const darkMode = () => {
               <router-link
                 active-class="active-link"
                 exact-active-class="exact-active-link"
-                to="/about"
+                to=""
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-500 md:p-0 dark:text-white md:dark:hover:text-yellow-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Résume</router-link
               >
