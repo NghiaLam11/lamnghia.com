@@ -49,7 +49,7 @@
                 />
                 <span class="font-medium dark:text-white"> {{ blog.auth }} </span>
               </div>
-              <router-link :to="`/blog/${blog.title}`">
+              <router-link class="" :to="`/blog/${blog.title}`">
                 <span
                   class="inline-flex items-center font-medium dark:text-cyan-500 text-blue-700 hover:underline"
                   >Read more</span

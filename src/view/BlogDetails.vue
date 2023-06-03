@@ -105,7 +105,7 @@
             <h2
               class="text-xl font-bold leading-tight text-gray-900 dark:text-white"
             >
-              <a href="#">{{ blogs?.title }}</a>
+              <a href="">{{ blogs?.title }}</a>
             </h2>
             <p
               class="mb-4 font-light text-gray-500 dark:text-gray-400 truncate"
@@ -113,18 +113,18 @@
               {{ blogs?.desc }}
             </p>
             <p
-              href="#"
               class="mb-2 font-light text-sm text-primary-400 dark:text-primary-500"
             >
               <i :class="[blogs.iconType, 'px-1']"></i> {{ blogs?.type }}
               {{ blogs?.dateUpload }}
             </p>
-            <a
-              href="#"
-              class="block font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
-            >
-              Read more
-            </a>
+            <router-link :to="`/blog/${blogs.title}`">
+                <span
+                @click="reloadPage"
+                  class="inline-flex items-center font-medium dark:text-cyan-500 text-blue-700 hover:underline"
+                  >Read more</span
+                >
+              </router-link>
           </article>
         </div>
       </div>
@@ -258,6 +258,13 @@ import { useRoute } from "vue-router";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 const route = useRoute();
+
+const reloadPage = () => { 
+  setTimeout(() => {
+    location.reload();
+  })
+};
+
 
 const blogsMap = new Map();
 const blog = ref<any>();
