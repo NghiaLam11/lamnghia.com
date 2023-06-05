@@ -1,5 +1,5 @@
 <template>
-  <div class="about dark:bg-slate-700 dark:text-white">
+  <div class="about dark:bg-slate-700 dark:text-white min-h-screen">
     <h1>Hello my friends. I'm ABOUT</h1>
   </div>
 </template>

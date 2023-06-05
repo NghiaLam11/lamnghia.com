@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import { ref } from "vue";
 import Header from './components/Header.vue'
+// import Footer from './components/Footer.vue'
 // import Loader from './components/Loader.vue'
 // let localTheme = localStorage.getItem("theme");
 // console.log(localTheme);
@@ -37,6 +38,7 @@ import Header from './components/Header.vue'
 <template>
     <Header></Header>
     <router-view></router-view>
+    <!-- <Footer></Footer> -->
     <!-- <Loader></Loader> -->
 </template>
 

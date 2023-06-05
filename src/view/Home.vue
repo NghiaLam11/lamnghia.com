@@ -632,13 +632,6 @@ onMounted(() => {
     </div>
   </div>
   <!-- ----------------------------- END PROJECTS -->
-  <!-- ---------------- START BREAK ------------------ -->
-  <div>
-    <div
-      class="h-2 bg-gradient-to-r from-violet-500 via-pink-500 to-fuchsia-500"
-    ></div>
-  </div>
-  <!-- ---------------- END BREAK ------------------ -->
 
 </template>
 
