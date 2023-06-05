@@ -190,10 +190,11 @@ onMounted(() => {
               class="text-transparent bg-clip-text bg-gradient-to-r to-orange-400 from-purple-500"
             >
               My technology skills include HTML, CSS, Javascript, Typescript,
-              and some Javascript frameworks (VueJs, ReactJs, and Gsap for
-              animation), SCSS, Bootstrap 5, Tailwind CSS, Firebase. Besides
-              tech skills, I have good self-study, enough writing and speaking
-              skills in English.</b
+              Git(basic), and some Javascript frameworks (VueJs, ReactJs, Gsap
+              for animation, and some Animation Slider Libraries like Swiper,
+              Owl Carousel,...), SCSS, Bootstrap 5, Tailwind CSS, Firebase.
+              Besides tech skills, I have good self-study, enough writing and
+              speaking skills in English.</b
             >
           </p>
         </h1>
@@ -632,7 +633,6 @@ onMounted(() => {
     </div>
   </div>
   <!-- ----------------------------- END PROJECTS -->
-
 </template>
 
 <style scoped>
